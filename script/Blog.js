@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const posts = [
     {
       title: "Mis sueños y metas",
-      image: "../img/Gato.png",
+      image: "https://raw.githubusercontent.com/TestJuz/Queen-s-Garden/refs/heads/main/img/Gato.png",
       tag: "Flores"
     },
     {

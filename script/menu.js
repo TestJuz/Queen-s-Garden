@@ -1,5 +1,5 @@
     document.addEventListener("DOMContentLoaded", function () {
-        fetch("../../Modulos/menu.html")
+        fetch("https://raw.githubusercontent.com/TestJuz/Queen-s-Garden/refs/heads/main/Modulos/menu.html")
             .then(response => response.text())
             .then(data => {
                 document.getElementById("menu-container").innerHTML = data;
