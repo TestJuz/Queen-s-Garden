@@ -1,0 +1,94 @@
+.card-med {
+    box-shadow: var(--card-shadow);
+    border-radius: 12px;
+    overflow: hidden;
+    background: linear-gradient(45deg, #f4cfc6 0%, #db7f67 100%);
+    padding: 16px;
+    transition: var(--hover-timing);
+    color: var(--text-01);
+}
+
+.card-med .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+}
+
+.card-med .card-image {
+    background: none !important;
+    box-shadow: none;
+    padding: 8px;
+    border-radius: 12px;
+}
+
+.card-med .card-image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+.card-med .card-text h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card-med .card-text p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.card-med .card-text a {
+    color: #4b0082;
+    text-decoration: underline;
+}
+
+.card-med .card-text a {
+    color: var(--text-01); /* O el color que desees */
+    text-decoration: none; /* Esto quita el subrayado */
+    font-weight: 500;
+}
+
+.card-med .card-text a:hover {
+    text-decoration: underline; /* Si querés que se subraye solo al pasar el mouse */
+    color: var(--brand-01); /* Color de hover opcional */
+}
+
+.card-med .card-text h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.card-med .card-text p {
+    font-size: 14px;
+    margin: 2px 0;
+}
+.card-med:hover {
+  box-shadow: var(--card-hover);
+  transform: scale(1.01);
+}
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px; /* antes estaba en 24px */
+  max-width: 1000px; /* podés ajustarlo más si querés aún más compacta la vista */
+  margin: 0 auto;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 1024px) {
+  .blog-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
